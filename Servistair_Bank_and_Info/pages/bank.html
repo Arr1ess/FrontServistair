@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Название</title>
+  </head>
+  <body>
+    <div class="wraper">
+      <header class="header"></header>
+      <main class="main">
+        <div class="container">
+          <a href="#" class="link-back">В корзину</a>
+          <h1 class="title">Оформление заказа</h1>
+          <form action="" class="order-form">
+            <div class="row row-recipient-address">
+              <div class="order-form__recipient order-block recipient">
+                <h2 class="recipient__title order-block__title">Получатель</h2>
+                <input
+                  type="text"
+                  placeholder="Фамилия"
+                  class="recipinet__input order-input"
+                />
+                <input
+                  type="text"
+                  placeholder="Имя"
+                  class="recipinet__input order-input"
+                />
+                <input
+                  type="text"
+                  placeholder="Отчество"
+                  class="recipinet__input order-input"
+                />
+                <input
+                  type="tel"
+                  placeholder="Телефон"
+                  class="recipinet__input order-input"
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="recipinet__input order-input"
+                />
+              </div>
+              <div class="order-form__address order-block address">
+                <h2 class="address__title order-block__title">
+                  Адрес доставки
+                </h2>
+                <div class="address__content">
+                  <div class="addrees__inputs">
+                    <input
+                      type="text"
+                      placeholder="Область/Край/Регион"
+                      class="address__input order-input"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Город"
+                      class="address__input order-input"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Улица"
+                      class="address__input order-input"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Дом"
+                      class="address__input order-input"
+                    />
+                    <input
+                      type="number"
+                      placeholder="Индекс"
+                      class="address__input order-input"
+                    />
+                  </div>
+                  <div class="address__buttons">
+                    <div
+                      class="address__button button"
+                      onclick="setActiveButtonDelivery(this)"
+                    >
+                      <div class="button__input-radio">
+                        <input
+                          type="radio"
+                          class="button__radio"
+                          name="delivery"
+                        />
+                        <span class="custom__radio"></span>
+                      </div>
+                      <p class="button__name">
+                        Самовывоз из магазина (ул. Пожарского, 295, Волгоград)
+                      </p>
+                      <p class="button__price">бесплатно</p>
+                    </div>
+                    <div
+                      class="address__button button"
+                      onclick="setActiveButtonDelivery(this)"
+                    >
+                      <div class="button__input-radio">
+                        <input
+                          type="radio"
+                          class="button__radio"
+                          name="delivery"
+                        />
+                        <span class="custom__radio"></span>
+                      </div>
+                      <p class="button__name">
+                        Доставка<br />
+                        Почтой России
+                      </p>
+                      <p class="button__price">+280 ₽</p>
+                    </div>
+                    <div
+                      class="address__button button"
+                      onclick="setActiveButtonDelivery(this)"
+                    >
+                      <div class="button__input-radio">
+                        <input
+                          type="radio"
+                          class="button__radio"
+                          name="delivery"
+                        />
+                        <span class="custom__radio"></span>
+                      </div>
+                      <p class="button__name">Доставка по Волгограду</p>
+                      <p class="button__price">+150 ₽</p>
+                    </div>
+                    <div
+                      class="address__button button"
+                      onclick="setActiveButtonDelivery(this)"
+                    >
+                      <div class="button__input-radio">
+                        <input
+                          type="radio"
+                          class="button__radio"
+                          name="delivery"
+                        />
+                        <span class="custom__radio"></span>
+                      </div>
+                      <p class="button__name">
+                        Доставка по России транспортной компаней
+                      </p>
+                      <p class="button__price">+480,58 ₽</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row row-payment">
+              <div class="order-form__payment order-block payment">
+                <h2 class="payment__title order-block__title">Способ оплаты</h2>
+                <div class="payment__content">
+                  <div class="payment__payment-methpod">
+                    <div class="payment__radios">
+                      <div class="payment__radio-block">
+                        <div class="payment__input-raio">
+                          <input
+                            type="radio"
+                            class="payment__input"
+                            name="paymentMethod"
+                            id="paymentMethod1"
+                          />
+                          <label
+                            for="paymentMethod1"
+                            class="custom__radio-payment"
+                          ></label>
+                        </div>
+                        <label for="paymentMethod1" class="radio__text"
+                          >На расчётный счёт</label
+                        >
+                        <p class="radio__text-help">Безнал</p>
+                      </div>
+                      <div class="payment__radio-block">
+                        <div class="payment__input-raio">
+                          <input
+                            type="radio"
+                            class="payment__input"
+                            name="paymentMethod"
+                            id="paymentMethod2"
+                          />
+                          <label
+                            for="paymentMethod2"
+                            class="custom__radio-payment"
+                          ></label>
+                        </div>
+                        <label for="paymentMethod2" class="radio__text"
+                          >Онлайн</label
+                        >
+                        <p class="radio__text-help">Банковской картой</p>
+                      </div>
+                      <div class="payment__radio-block">
+                        <div class="payment__input-raio">
+                          <input
+                            type="radio"
+                            class="payment__input"
+                            name="paymentMethod"
+                            id="paymentMethod3"
+                          />
+                          <label
+                            for="paymentMethod3"
+                            class="custom__radio-payment"
+                          ></label>
+                        </div>
+                        <label for="paymentMethod3" class="radio__text"
+                          >Наличными</label
+                        >
+                        <p class="radio__text-help"></p>
+                      </div>
+                    </div>
+                    <div class="payment__save-card">
+                      <div class="save-card">
+                        <input
+                          type="checkbox"
+                          name="isSaveCard"
+                          id="saveCard"
+                          class="save-card__checkbox"
+                        />
+                        <label
+                          for="saveCard"
+                          class="custom-checkbox-payment"
+                        ></label>
+                      </div>
+                      <label for="saveCard" class="save-card-text"
+                        >Сохранить карту</label
+                      >
+                    </div>
+                  </div>
+                  <div class="payment__cards">
+                    <div class="cards">
+                      <a href="#" class="link-all">все способы оплаты</a>
+                      <div class="card">
+                        <div class="card__logo-number">
+                          <img
+                            src="../images/mir.png"
+                            alt="Мир"
+                            class="card__logo"
+                          />
+                          <input
+                            type="radio"
+                            class="card__radio"
+                            id="card1"
+                            name="cardCredit"
+                          />
+                          <label for="card1" class="card__custom-radio"></label>
+                          <img
+                            src="../images/yellow_fon.png"
+                            alt=""
+                            class="card__fons-logo"
+                          />
+                          <img
+                            src="../images/Tinkoff.png"
+                            alt=""
+                            class="card__logo-bank"
+                          />
+                          <p class="card__last-numbers">••3293</p>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card__logo-number">
+                          <img
+                            src="../images/mastercart.png"
+                            alt="Мир"
+                            class="card__logo"
+                          />
+                          <input
+                            type="radio"
+                            class="card__radio"
+                            id="card2"
+                            name="cardCredit"
+                          />
+                          <label for="card2" class="card__custom-radio"></label>
+                          <img
+                            src="../images/green_fon.png"
+                            alt=""
+                            class="card__fons-logo"
+                          />
+                          <img
+                            src="../images/Сбер.png"
+                            alt=""
+                            class="card__logo-bank"
+                          />
+                          <p class="card__last-numbers">••3293</p>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card__logo-number">
+                          <img
+                            src="../images/visa.png"
+                            alt="Мир"
+                            class="card__logo"
+                          />
+                          <input
+                            type="radio"
+                            class="card__radio"
+                            id="card3"
+                            name="cardCredit"
+                          />
+                          <label for="card3" class="card__custom-radio"></label>
+                          <img
+                            src="../images/red_fon.png"
+                            alt=""
+                            class="card__fons-logo"
+                          />
+                          <img
+                            src="../images/Альфа.png"
+                            alt=""
+                            class="card__logo-bank"
+                          />
+                          <p class="card__last-numbers">••3293</p>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card__logo-number">
+                          <img
+                            src="../images/mir.png"
+                            alt="Мир"
+                            class="card__logo"
+                          />
+                          <img
+                            src="../images/blue_fon.png"
+                            alt=""
+                            class="card__fons-logo"
+                          />
+                          <input
+                            type="radio"
+                            class="card__radio"
+                            id="card4"
+                            name="cardCredit"
+                          />
+                          <label for="card4" class="card__custom-radio"></label>
+                          <img
+                            src="../images/втб.png"
+                            alt=""
+                            class="card__logo-bank"
+                          />
+                          <p class="card__last-numbers">••3293</p>
+                        </div>
+                      </div>
+                      <div class="card card-add">
+                        <div class="card__logo-number">
+                          <img
+                            src="../images/credit-card.png"
+                            alt="Мир"
+                            class="card__logo-new"
+                          />
+                          <input
+                            type="radio"
+                            class="card__radio"
+                            id="card-add"
+                            name="cardCredit"
+                          />
+                          <label
+                            for="card-add"
+                            class="card__custom-radio"
+                          ></label>
+                          <img
+                            src="../images/grey_fon.png"
+                            alt=""
+                            class="card__fons-logo"
+                          />
+                          <img
+                            src="../images/bank2.png"
+                            alt=""
+                            class="card__logo-bank"
+                          />
+                          <p class="card__last-add-text">новая карта</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payment__card-input">
+                    <div class="card-input__container">
+                      <label class="card-input__text card-input__number">
+                        <p class="text__number">Номер карты</p>
+                        <input
+                          type="text"
+                          class="card-input__numbers"
+                          placeholder="XXXX XXXX XXXX XXXX"
+                        />
+                      </label>
+                      <div class="row date-cvv">
+                        <label class="card-input__text card-input__date-m">
+                          <p class="text__number">Месяц / Год</p>
+                          <input
+                            placeholder="XX/XX"
+                            type="text"
+                            class="card-input__date"
+                          />
+                        </label>
+                        <label class="card-input__text card-input__cvv-cvc">
+                          <p class="text__number crutch">CVV / CVC</p>
+                          <input
+                            placeholder="..."
+                            type="password"
+                            class="card-input__cvv"
+                          />
+                        </label>
+                      </div>
+                      <div class="card-input__text-safely">
+                        <div class="card-input__img">
+                          <img
+                            src="../images/галочка.png"
+                            alt=""
+                            class="card-input__text-safely__img"
+                          />
+                        </div>
+                        <p class="text-safely">
+                          Платёж защищен. Данные карты передаются только в
+                          зашифрованном виде по протоколу SSL, защищаются и
+                          обрабатываются по стандарту безопасности PCI DSS.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row row-order-total">
+              <div class="order-form__order order-block order">
+                <h2 class="order-block__title">Заказ</h2>
+                <div class="order__card card-product">
+                  <div class="card__block-img">
+                    <img src="../images/куча 1.png" alt="" class="card__img" />
+                  </div>
+                  <div class="card__info">
+                    <p class="card__name">Груз стандартный 5г 100 шт.</p>
+                    <p class="card__article">артикул: FSGXHHSBUS</p>
+                    <div class="card__availability-block">
+                      <div class="img-block">
+                        <img
+                          src="../images/check-circle-fill.png"
+                          alt=""
+                          class="card__availability-img"
+                        />
+                      </div>
+                      <p class="card__availability__text">есть в наличии</p>
+                    </div>
+                  </div>
+                  <div class="card__buttons">
+                    <button class="card__basket" onclick="deleteProduct(this)">
+                      <img
+                        src="../images/удалить из корзины.svg"
+                        alt=""
+                        class="basket"
+                      />
+                    </button>
+                    <p class="card__price">
+                      1100<span class="price__valuta">руб.</span>
+                    </p>
+                    <div class="card__button-add-pop button-add-pop">
+                      <div class="button-add-pop__container">
+                        <button
+                          type="button"
+                          class="button-add-pop__add"
+                          onclick="addCountProduct(this)"
+                        >
+                          <img src="../images/+.svg" alt="" />
+                        </button>
+                        <input
+                          type="text"
+                          class="button-add-pop__input"
+                          placeholder="2"
+                        />
+                        <button
+                          type="button"
+                          class="button-add-pop__pop"
+                          onclick="erraseCountProduct(this)"
+                        >
+                          <img src="../images/Line 28.svg" alt="" />
+                        </button>
+                      </div>
+                      <div class="card__button-heart-favorites">
+                        <button class="card__heart">
+                          <img src="../images/heart.svg" alt="" class="heart" />
+                        </button>
+                        <button class="card__favorites">
+                          <img
+                            src="../images/favorites.svg"
+                            alt=""
+                            class="favorites"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="order__card card-product">
+                  <div class="card__block-img">
+                    <img
+                      src="../images/_MG_4353 1.png"
+                      alt=""
+                      class="card__img"
+                    />
+                  </div>
+                  <div class="card__info">
+                    <p class="card__name">Груз стандартный 5г 100 шт.</p>
+                    <p class="card__article">артикул: FSGXHHSBUS</p>
+                    <div class="card__availability-block">
+                      <div class="img-block">
+                        <img
+                          src="../images/check-circle-fill.png"
+                          alt=""
+                          class="card__availability-img"
+                        />
+                      </div>
+                      <p class="card__availability__text">есть в наличии</p>
+                    </div>
+                  </div>
+                  <div class="card__buttons">
+                    <button class="card__basket" onclick="deleteProduct(this)">
+                      <img src="../images/удалить из корзины.svg" alt="" />
+                    </button>
+                    <p class="card__price">
+                      1100<span class="price__valuta">руб.</span>
+                    </p>
+                    <div class="card__button-add-pop button-add-pop">
+                      <div class="button-add-pop__container">
+                        <button
+                          type="button"
+                          class="button-add-pop__add"
+                          onclick="addCountProduct(this)"
+                        >
+                          <img src="../images/+.svg" alt="" />
+                        </button>
+                        <input
+                          type="text"
+                          class="button-add-pop__input"
+                          placeholder="1"
+                        />
+                        <button
+                          type="button"
+                          class="button-add-pop__pop"
+                          onclick="erraseCountProduct(this)"
+                        >
+                          <img src="../images/Line 28.svg" alt="" />
+                        </button>
+                      </div>
+                      <div class="card__button-heart-favorites">
+                        <button class="card__heart">
+                          <img src="../images/heart.svg" alt="" class="heart" />
+                        </button>
+                        <button class="card__favorites">
+                          <img
+                            src="../images/favorites.svg"
+                            alt=""
+                            class="favorites"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="order__links order__link-back">
+                  <a href="#" class="link-back-catalog"
+                    >Что-то забыли добавить? Просто перейдите в каталог</a
+                  >
+                </div>
+              </div>
+              <div class="order-form__total total">
+                <div class="total__content-text">
+                  <div class="total__tovars">
+                    <p class="total__count-products total-text">3 Товара</p>
+                    <p class="total__price total-price">3490 ₽</p>
+                  </div>
+                  <div class="total__delivery">
+                    <p class="total__delivery-text total-text">Доставка</p>
+                    <p class="total__delivery-text total-price">500 ₽</p>
+                  </div>
+                  <div class="total__result-price">
+                    <div class="total__text">
+                      <p class="total__result-text">Итого</p>
+                      <p class="total__method">оплата картой</p>
+                    </div>
+                    <p class="total__result-price">3990 ₽</p>
+                  </div>
+                </div>
+                <div class="total__button-make-order">
+                  <button class="total__button">оформить заказ</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+  </body>
+  <script src="../script.js"></script>
+</html>

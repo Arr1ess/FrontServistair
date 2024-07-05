@@ -1,0 +1,1099 @@
+/* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+.container {
+  max-width: 1342px;
+  padding-inline: 30px;
+  margin: 0 auto;
+}
+
+.wraper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  font-style: normal;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.title-page {
+  font-size: 40px;
+  font-family: "Ubuntu", sans-serif;
+  color: #2c2c2c;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.product-info-block {
+  margin-bottom: 28px;
+  display: grid;
+  grid-template-columns: minmax(200px, 901px) minmax(200px, 364px);
+  grid-column-gap: 17px;
+}
+@media (max-width: 1050px) {
+  .product-info-block {
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+  }
+}
+
+.block-information {
+  background-color: #ffffff;
+  padding: 35px 50px 5px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 690px) {
+  .block-information {
+    padding: 35px 10px 5px 40px;
+  }
+}
+
+.intro-image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  max-width: 309px;
+  height: auto;
+  margin-top: -50px;
+}
+@media (max-width: 743px) {
+  .intro-image {
+    max-width: 250px;
+  }
+}
+@media (max-width: 1241px) {
+  .intro-image {
+    max-width: 290px;
+  }
+}
+@media (max-width: 1200px) {
+  .intro-image {
+    max-width: 260px;
+  }
+}
+
+.intro-slider-button-prev {
+  color: #2c2c2c;
+  margin-top: -50px;
+}
+
+.intro-slider-button-next {
+  color: #2c2c2c;
+  margin-top: -50px;
+  right: 0;
+}
+
+.block-information__propertyes-product {
+  max-width: 358px;
+  margin-left: 45px;
+}
+
+.block-information__dimensions-title {
+  margin-bottom: 15px;
+}
+
+.title-property {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+  color: #2c2c2c;
+}
+
+.block-information__equipment-text {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+  color: #636363;
+}
+
+.block-information__name-product {
+  font-size: 23px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  color: #2c2c2c;
+  margin-bottom: 5px;
+}
+
+.block-information__existence {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.block-information__text-existence {
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color: #2c2c2c;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.block-information__intro-image {
+  width: 100%;
+}
+
+.intro-slider {
+  overflow: hidden;
+}
+
+.intro-slider__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-information__images {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 80% 20%;
+}
+@media (max-width: 1200px) {
+  .block-information__images {
+    grid-template-columns: 55% 45%;
+  }
+}
+@media (max-width: 873px) {
+  .block-information__images {
+    grid-template-columns: 60% 40%;
+  }
+}
+@media (max-width: 670px) {
+  .block-information__images {
+    grid-template-columns: 55% 45%;
+  }
+}
+
+.block-information__equipment-title {
+  margin-bottom: 15px;
+}
+
+.block-information__dimensions {
+  margin-top: 27px;
+}
+
+.block-information__dimensions-property {
+  max-width: 280px;
+}
+
+.dimensions-property__item {
+  display: flex;
+  margin-bottom: 19px;
+  align-items: center;
+}
+
+.dimensions-property__item-name {
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  color: #636363;
+}
+
+.dimensions-property__item-value {
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  color: #2c2c2c;
+  text-align: left;
+  min-width: 60px;
+}
+
+.dimensions-property__item-points {
+  flex-grow: 1;
+  border-bottom: 1px dotted #000;
+  height: 1em;
+  margin-bottom: 5px;
+}
+
+.block-information__slider {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin-top: -30px;
+}
+
+.block-information__slider-image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 44px;
+}
+
+.block-information__slider-image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background-color: #ffffff;
+  margin-right: 15px;
+  border-radius: 23px;
+  box-shadow: 0 0 10.3px 0 rgba(0, 0, 0, 0.25);
+}
+
+.active-slider-image-box {
+  width: 75px;
+  height: 75px;
+}
+
+.active-slider-image {
+  max-height: 48px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.product-info-block__block-buy {
+  padding: 21px 19px 18px 18px;
+}
+
+.product-info-block__price-new-valuta {
+  font-size: 20px;
+  font-weight: 400;
+  color: #2c2c2c;
+  font-family: "Mulish", sans-serif;
+}
+
+.product-info-block__price-line {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.product-info-block__price-old-block {
+  z-index: -1;
+  position: absolute;
+  left: 38%;
+  top: 0;
+  font-size: 20px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 300;
+  color: #636363;
+}
+
+.product-info-block__price-old {
+  position: relative;
+}
+.product-info-block__price-old::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images_product/cross.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+}
+
+.product-info-block__buttons {
+  width: 137px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.product-info-block__price-old-valuta {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Mulish", sans-serif;
+  color: #636363;
+}
+
+.product-info-block__price-discount {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #ff4444;
+}
+
+.product-info-block__block-buy {
+  position: sticky;
+  top: 10px;
+  height: 221px;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 5.3px 1px rgba(0, 0, 0, 0.25);
+}
+
+.product-info-block__price-new {
+  font-size: 60px;
+  font-family: "Mulish", sans-serif;
+  color: #2c2c2c;
+  font-weight: 300;
+}
+
+.product-info-block__block-buy-container {
+  position: relative;
+  height: 100%;
+}
+
+.product-info-block__button-buy {
+  width: 100%;
+  color: #ffffff;
+  background-color: #ff4444;
+  border-radius: 34px;
+  height: 46px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.product-description {
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+  padding: 20px 35px 25px 25px;
+  margin-bottom: 59px;
+}
+
+.product-description__title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 35px;
+  color: #2c2c2c;
+  font-weight: 500;
+  margin-bottom: 21px;
+  max-width: 286px;
+}
+
+.product-description__text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 17px;
+  color: #2c2c2c;
+  font-weight: 500;
+  text-align: left;
+}
+
+.product-viewed__title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  color: #2c2c2c;
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+.product-viewed__title::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  height: 38px;
+  color: #ff4444;
+  background-color: #ff4444;
+  width: 8px;
+  border-radius: 18px;
+  transform: translateY(-50%);
+}
+
+.product-viewed__products-content {
+  display: grid;
+  grid-template-columns: minmax(200px, 416px) minmax(200px, 416px) minmax(200px, 416px);
+  grid-column-gap: 17px;
+  grid-row-gap: 37px;
+}
+@media (max-width: 1030px) {
+  .product-viewed__products-content {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 17px;
+  }
+}
+
+.card-viewed-product {
+  padding: 13px 13px 13px 17px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 9.4px;
+  box-shadow: 0px 0px 6.58px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card-viewed-product__text-title {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  line-height: 1;
+}
+
+.card-viewed-product__title {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-size: 22.1px;
+  color: #2c2c2c;
+  line-height: 1.2;
+}
+
+.card-viewed-product__vendor-code {
+  font-size: 11.28px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  color: #595959;
+  margin-top: 1.9%;
+}
+
+.card-viewed-product__price-number {
+  font-size: 42.88px;
+  font-weight: 400;
+  font-family: "Mulish", sans-serif;
+  color: #2c2c2c;
+  line-height: 0.7;
+}
+
+.card-viewed-product__text {
+  font-size: 12.22px;
+  font-weight: 400;
+  font-family: "Mulish", sans-serif;
+  color: #494949;
+}
+
+.card-viewed-product__info-price {
+  display: flex;
+  align-items: end;
+  margin-top: 28%;
+}
+
+.card-viewed-product__content {
+  display: grid;
+  grid-template-columns: minmax(100px, 150px) minmax(180px, 200px);
+}
+
+.card-viewed-product__icons {
+  display: flex;
+}
+
+.card-viewed-product__icon-add {
+  display: flex;
+}
+
+.card-viewed-product__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-viewed-product__icon-box {
+  border-radius: 8.49px;
+  box-shadow: 0px 0px 3.76px 0px rgba(0, 0, 0, 0.25);
+  padding: 3px;
+}
+
+.card-viewed-product__icon-busket {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.card-viewed-product__icon-add {
+  display: flex;
+  align-items: center;
+  border-radius: 8.49px;
+  box-shadow: 0px 0px 3.76px 0px rgba(0, 0, 0, 0.25);
+  padding: 3px;
+  line-height: 0.8;
+}
+
+.card-viewed-product__icon-minus {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.card-viewed-product__icon-plus {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.card-viewed-product__icon-minus-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-viewed-product__icon-plus-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.history-card {
+  border-radius: 9.4px;
+  padding: 13px;
+  position: relative;
+}
+.history-card__title {
+  font-size: 23.49px;
+  text-wrap: wrap;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+}
+@media (max-width: 1330px) {
+  .history-card__title {
+    max-width: 300px;
+  }
+}
+.history-card__content {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+@media (max-width: 1330px) {
+  .history-card__content {
+    gap: 0px;
+  }
+}
+@media (max-width: 1030px) {
+  .history-card__content {
+    gap: 30px;
+  }
+}
+.history-card__text {
+  display: flex;
+  flex-direction: column;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-size: 23.49px;
+  font-family: "Fira Sans", sans-serif;
+  color: #2c2c2c;
+}
+.history-card__articul {
+  font-size: 11.28px;
+  color: #494949;
+  margin-bottom: 26px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+}
+.history-card__price {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 11.28px;
+  text-wrap: nowrap;
+  margin-bottom: 10px;
+  color: #595959;
+}
+.history-card__price > b {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  color: #2c2c2c;
+}
+.history-card__busket-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 17px;
+  margin-bottom: 6.5px;
+}
+.history-card__busket-btn {
+  box-shadow: 0px 0px 3.76px 0px rgba(0, 0, 0, 0.3176470588);
+  border-radius: 8.46px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  aspect-ratio: 1;
+}
+.history-card__busket-btn > img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  max-height: 100%;
+}
+.history-card__value-controler {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4.5px 10px;
+  gap: 20px;
+  color: #2c2c2c;
+  box-shadow: 0px 0px 3.76px 0px rgba(0, 0, 0, 0.3176470588);
+  border-radius: 8.46px;
+}
+.history-card__value-controler > * {
+  font-size: 18.58px;
+}
+.history-card__link {
+  background-color: #ff4444;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  box-shadow: 0px 2px 3.76px 0px rgba(0, 0, 0, 0.3176470588);
+  padding: 6% 18px;
+  font-weight: bold;
+  font-size: 21px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+}
+.history-card__image {
+  align-self: flex-end;
+  max-width: 100%;
+}
+@media (max-width: 1330px) {
+  .history-card__image {
+    align-self: center;
+  }
+}
+.history-card__image > img {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: bottom right;
+     object-position: bottom right;
+}
+
+.history-card__value-plus {
+  transition: all ease 0.5s;
+}
+
+.history-card__value-minus {
+  transition: all ease 0.5s;
+}
+
+.history-card__value-minus:hover {
+  transform: scale(1.35);
+  transition: scale ease 0.5s;
+}
+
+.history-card__value-plus:hover {
+  transform: scale(1.35);
+  transition: scale ease 0.5s;
+}
+
+.history-card {
+  box-shadow: 0 0 6.58px 0 rgba(0, 0, 0, 0.25);
+}
+
+.history-card__favorites {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.link-back {
+  position: absolute;
+  left: 6.9%;
+}
+
+.main-mobile {
+  background-color: #ffffff;
+}
+
+.mobile-container {
+  max-width: 432px;
+  padding-inline: 30px;
+  margin: 0 auto;
+}
+
+.header-mobile {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 69px;
+  border-bottom: rgba(44, 44, 44, 0.21) solid 1px;
+  background-color: #ffffff;
+}
+
+.title-product {
+  font-family: "Fira Sans", sans-serif;
+  color: #2c2c2c;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.main-slider-product {
+  width: 100%;
+  max-height: 345px;
+}
+
+.main-slider__content {
+  margin-top: 50px;
+  margin-bottom: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-item__img {
+  max-width: 272px;
+}
+
+.main-title-product__header {
+  max-width: 322px;
+}
+
+.main-title-product__article {
+  color: #595959;
+  font-family: "Mulish", sans-serif;
+  font-size: 10.48px;
+  font-weight: 400;
+}
+
+.article {
+  text-transform: lowercase;
+}
+
+.main-title-product {
+  margin-bottom: 10px;
+}
+
+.availability-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.availability-block__img {
+  height: 15px;
+  width: 15px;
+}
+
+.availability-block__text {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2c2c2c;
+  margin-left: 5px;
+}
+
+.price-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 43px;
+}
+
+.price-block__price {
+  display: flex;
+  align-items: flex-end;
+}
+
+.price-block__price-number {
+  font-family: "Mulish", sans-serif;
+  font-size: 40.11px;
+  color: #2c2c2c;
+  font-weight: 400;
+  line-height: 0.9;
+}
+
+.price-block-valuta {
+  font-family: "Mulish", sans-serif;
+  font-size: 12.03px;
+  color: #494949;
+  font-weight: 400;
+}
+
+.buttons-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 24px;
+  margin-bottom: 48px;
+}
+@media (max-width: 429px) {
+  .buttons-block {
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+  }
+}
+
+.favorities-btn {
+  height: 39px;
+  width: 174px;
+  display: flex;
+  align-items: center;
+  padding: 13px 28px 13px 25px;
+  background-color: #e2e2e2;
+  border-radius: 25px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.35);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #2c2c2c;
+}
+@media (max-width: 429px) {
+  .favorities-btn {
+    width: 100%;
+  }
+}
+
+.favorites-btn__text {
+  margin-left: 5px;
+}
+
+.basket-btn {
+  width: 174px;
+  height: 39px;
+  display: flex;
+  align-items: center;
+  padding: 13px 28px 13px 25px;
+  background-color: #ff4444;
+  border-radius: 25px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.35);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+@media (max-width: 429px) {
+  .basket-btn {
+    width: 100%;
+  }
+}
+
+.basket-btn__text {
+  margin-left: 7px;
+}
+
+.description-block {
+  width: 100%;
+  background-color: #f2f3f5;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-inline: 22px;
+  max-height: 223px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.description__title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #2c2c2c;
+  margin-bottom: 18px;
+}
+
+.description__text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  color: #2c2c2c;
+  font-weight: 500;
+  text-align: left;
+  -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 42%);
+  mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 42%);
+  z-index: 1;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    top: 98%;
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+@keyframes reverseRotateAnimation {
+  0% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  100% {
+    top: 93%;
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+.description__button-open-close {
+  z-index: 10;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  transform-origin: center;
+}
+
+.rotate {
+  transform: translateX(-50%) rotate(180deg);
+  transform-origin: center;
+  animation: rotateAnimation 0.3s forwards;
+}
+
+.reverse-rotate {
+  top: 98%;
+  animation: reverseRotateAnimation 0.2s forwards;
+}
+
+.uncorentTextBlock {
+  max-height: 1000px;
+  animation: uncorentTextBlock 0.5s forwards;
+}
+
+.uncorentText {
+  -webkit-mask-image: none;
+  mask-image: none;
+  transition: mask-image 0.6s ease, -webkit-mask-image 0.6s ease;
+}
+
+@keyframes uncorentTextBlock {
+  0% {
+    max-height: 223px;
+    overflow: visible;
+  }
+  100% {
+    max-height: 1000px;
+    overflow: visible;
+  }
+}
+.recommended-products__title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #2c2c2c;
+  margin-bottom: 20px;
+}
+
+.recommended-slider__item {
+  max-width: 322px;
+}
+
+.recommended-products-card {
+  display: flex;
+  flex-direction: row;
+  gap: 4.5px;
+}
+
+.busket-btn-recommended {
+  box-shadow: 0 0 3.83px 0 black;
+  border-radius: 8.61px;
+  width: 30.6px;
+  height: 30.6px;
+}
+
+.recommended-card__link {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.recommended-products {
+  margin-bottom: 85px;
+}
+
+.recommended-slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.recommended-slider__content {
+  max-width: 372px;
+  margin: 0 auto;
+  padding-block: 10px;
+}
+
+.recommended-slider__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 650px) {
+  .pc-version {
+    display: none;
+  }
+}
+@media (min-width: 650px) {
+  .mobile-version {
+    display: none;
+  }
+  .pc-version {
+    display: block;
+  }
+}/*# sourceMappingURL=product.css.map */
