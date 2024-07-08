@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="../style.css" />
     <title>Название</title>
   </head>
@@ -159,14 +163,14 @@
                             type="radio"
                             class="payment__input"
                             name="paymentMethod"
-                            id="paymentMethod1"
+                            id="paymentMethod2"
                           />
                           <label
-                            for="paymentMethod1"
+                            for="paymentMethod2"
                             class="custom__radio-payment"
                           ></label>
                         </div>
-                        <label for="paymentMethod1" class="radio__text"
+                        <label for="paymentMethod2" class="radio__text"
                           >На расчётный счёт</label
                         >
                         <p class="radio__text-help">Безнал</p>
@@ -227,149 +231,205 @@
                     </div>
                   </div>
                   <div class="payment__cards">
-                    <div class="cards">
-                      <a href="#" class="link-all">все способы оплаты</a>
-                      <div class="card">
-                        <div class="card__logo-number">
-                          <img
-                            src="../images/mir.png"
-                            alt="Мир"
-                            class="card__logo"
-                          />
-                          <input
-                            type="radio"
-                            class="card__radio"
-                            id="card1"
-                            name="cardCredit"
-                          />
-                          <label for="card1" class="card__custom-radio"></label>
-                          <img
-                            src="../images/yellow_fon.png"
-                            alt=""
-                            class="card__fons-logo"
-                          />
-                          <img
-                            src="../images/Tinkoff.png"
-                            alt=""
-                            class="card__logo-bank"
-                          />
-                          <p class="card__last-numbers">••3293</p>
+                    <div class="swiper cards">
+                      <div class="swiper-wrapper cards__wrapper">
+                        <a href="#" class="link-all">все способы оплаты</a>
+                        <div class="swiper-slide slider-cards">
+                          <div class="card">
+                            <div class="card__logo-number">
+                              <img
+                                src="../images/mir.png"
+                                alt="Мир"
+                                class="card__logo"
+                              />
+                              <input
+                                type="radio"
+                                class="card__radio"
+                                id="card1"
+                                name="cardCredit"
+                              />
+                              <label
+                                for="card1"
+                                class="card__custom-radio"
+                              ></label>
+                              <img
+                                src="../images/yellow_fon.png"
+                                alt=""
+                                class="card__fons-logo"
+                              />
+                              <img
+                                src="../images/Tinkoff.png"
+                                alt=""
+                                class="card__logo-bank"
+                              />
+                              <p class="card__last-numbers">••3293</p>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__logo-number">
-                          <img
-                            src="../images/mastercart.png"
-                            alt="Мир"
-                            class="card__logo"
-                          />
-                          <input
-                            type="radio"
-                            class="card__radio"
-                            id="card2"
-                            name="cardCredit"
-                          />
-                          <label for="card2" class="card__custom-radio"></label>
-                          <img
-                            src="../images/green_fon.png"
-                            alt=""
-                            class="card__fons-logo"
-                          />
-                          <img
-                            src="../images/Сбер.png"
-                            alt=""
-                            class="card__logo-bank"
-                          />
-                          <p class="card__last-numbers">••3293</p>
+                        <div class="swiper-slide slider-cards">
+                          <div class="card">
+                            <div class="card__logo-number">
+                              <img
+                                src="../images/mastercart.png"
+                                alt="Мир"
+                                class="card__logo"
+                              />
+                              <input
+                                type="radio"
+                                class="card__radio"
+                                id="card2"
+                                name="cardCredit"
+                              />
+                              <label
+                                for="card2"
+                                class="card__custom-radio"
+                              ></label>
+                              <img
+                                src="../images/green_fon.png"
+                                alt=""
+                                class="card__fons-logo"
+                              />
+                              <img
+                                src="../images/Сбер.png"
+                                alt=""
+                                class="card__logo-bank"
+                              />
+                              <p class="card__last-numbers">••3293</p>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__logo-number">
-                          <img
-                            src="../images/visa.png"
-                            alt="Мир"
-                            class="card__logo"
-                          />
-                          <input
-                            type="radio"
-                            class="card__radio"
-                            id="card3"
-                            name="cardCredit"
-                          />
-                          <label for="card3" class="card__custom-radio"></label>
-                          <img
-                            src="../images/red_fon.png"
-                            alt=""
-                            class="card__fons-logo"
-                          />
-                          <img
-                            src="../images/Альфа.png"
-                            alt=""
-                            class="card__logo-bank"
-                          />
-                          <p class="card__last-numbers">••3293</p>
+                        <div class="swiper-slide slider-cards">
+                          <div class="card">
+                            <div class="card__logo-number">
+                              <img
+                                src="../images/visa.png"
+                                alt="Мир"
+                                class="card__logo"
+                              />
+                              <input
+                                type="radio"
+                                class="card__radio"
+                                id="card3"
+                                name="cardCredit"
+                              />
+                              <label
+                                for="card3"
+                                class="card__custom-radio"
+                              ></label>
+                              <img
+                                src="../images/red_fon.png"
+                                alt=""
+                                class="card__fons-logo"
+                              />
+                              <img
+                                src="../images/Альфа.png"
+                                alt=""
+                                class="card__logo-bank"
+                              />
+                              <p class="card__last-numbers">••3293</p>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="card">
-                        <div class="card__logo-number">
-                          <img
-                            src="../images/mir.png"
-                            alt="Мир"
-                            class="card__logo"
-                          />
-                          <img
-                            src="../images/blue_fon.png"
-                            alt=""
-                            class="card__fons-logo"
-                          />
-                          <input
-                            type="radio"
-                            class="card__radio"
-                            id="card4"
-                            name="cardCredit"
-                          />
-                          <label for="card4" class="card__custom-radio"></label>
-                          <img
-                            src="../images/втб.png"
-                            alt=""
-                            class="card__logo-bank"
-                          />
-                          <p class="card__last-numbers">••3293</p>
+                        <div class="swiper-slide slider-cards">
+                          <div class="card">
+                            <div class="card__logo-number">
+                              <img
+                                src="../images/mir.png"
+                                alt="Мир"
+                                class="card__logo"
+                              />
+                              <img
+                                src="../images/blue_fon.png"
+                                alt=""
+                                class="card__fons-logo"
+                              />
+                              <input
+                                type="radio"
+                                class="card__radio"
+                                id="card4"
+                                name="cardCredit"
+                              />
+                              <label
+                                for="card4"
+                                class="card__custom-radio"
+                              ></label>
+                              <img
+                                src="../images/втб.png"
+                                alt=""
+                                class="card__logo-bank"
+                              />
+                              <p class="card__last-numbers">••3293</p>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="card card-add">
-                        <div class="card__logo-number">
-                          <img
-                            src="../images/credit-card.png"
-                            alt="Мир"
-                            class="card__logo-new"
-                          />
-                          <input
-                            type="radio"
-                            class="card__radio"
-                            id="card-add"
-                            name="cardCredit"
-                          />
-                          <label
-                            for="card-add"
-                            class="card__custom-radio"
-                          ></label>
-                          <img
-                            src="../images/grey_fon.png"
-                            alt=""
-                            class="card__fons-logo"
-                          />
-                          <img
-                            src="../images/bank2.png"
-                            alt=""
-                            class="card__logo-bank"
-                          />
-                          <p class="card__last-add-text">новая карта</p>
+                        <div class="swiper-slide slider-cards">
+                          <div class="card card-add">
+                            <div class="card__logo-number">
+                              <img
+                                src="../images/credit-card.png"
+                                alt="Мир"
+                                class="card__logo-new"
+                              />
+                              <input
+                                type="radio"
+                                class="card__radio"
+                                id="card-add"
+                                name="cardCredit"
+                              />
+                              <label
+                                for="card-add"
+                                class="card__custom-radio"
+                              ></label>
+                              <img
+                                src="../images/grey_fon.png"
+                                alt=""
+                                class="card__fons-logo"
+                              />
+                              <img
+                                src="../images/bank2.png"
+                                alt=""
+                                class="card__logo-bank"
+                              />
+                              <p class="card__last-add-text">новая карта</p>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
+                    <div class="cards-button-prev">
+                      <img
+                        src="../images/Line 102.svg"
+                        alt=""
+                        class="button-prev"
+                      />
+                    </div>
+                    <div class="cards-button-next">
+                      <img
+                        src="../images/Line 102.svg"
+                        alt=""
+                        class="button-next"
+                      />
+                    </div>
                   </div>
                   <div class="payment__card-input">
+                    <div class="payment__save-card-block">
+                      <div class="payment__input-save">
+                        <input
+                          type="checkbox"
+                          class="payment__input"
+                          name="saveCardMobile"
+                          id="saveCardMobile"
+                        />
+                        <label
+                          for="saveCardMobile"
+                          class="custom__radio-payment-mobile"
+                        ></label>
+                      </div>
+                      <label for="saveCardMobile" class="radio__text-mobile"
+                        >Сохранить карту</label
+                      >
+                    </div>
+
                     <div class="card-input__container">
                       <label class="card-input__text card-input__number">
                         <p class="text__number">Номер карты</p>
@@ -418,143 +478,177 @@
             </div>
             <div class="row row-order-total">
               <div class="order-form__order order-block order">
-                <h2 class="order-block__title">Заказ</h2>
-                <div class="order__card card-product">
-                  <div class="card__block-img">
-                    <img src="../images/куча 1.png" alt="" class="card__img" />
-                  </div>
-                  <div class="card__info">
-                    <p class="card__name">Груз стандартный 5г 100 шт.</p>
-                    <p class="card__article">артикул: FSGXHHSBUS</p>
-                    <div class="card__availability-block">
-                      <div class="img-block">
+                <div class="order-block">
+                  <h2 class="order-block__title">Заказ</h2>
+                  <div class="order-block__content">
+                    <div class="order__card card-product">
+                      <div class="card__block-img">
                         <img
-                          src="../images/check-circle-fill.png"
+                          src="../images/куча 1.png"
                           alt=""
-                          class="card__availability-img"
+                          class="card__img"
                         />
                       </div>
-                      <p class="card__availability__text">есть в наличии</p>
-                    </div>
-                  </div>
-                  <div class="card__buttons">
-                    <button class="card__basket" onclick="deleteProduct(this)">
-                      <img
-                        src="../images/удалить из корзины.svg"
-                        alt=""
-                        class="basket"
-                      />
-                    </button>
-                    <p class="card__price">
-                      1100<span class="price__valuta">руб.</span>
-                    </p>
-                    <div class="card__button-add-pop button-add-pop">
-                      <div class="button-add-pop__container">
-                        <button
-                          type="button"
-                          class="button-add-pop__add"
-                          onclick="addCountProduct(this)"
-                        >
-                          <img src="../images/+.svg" alt="" />
-                        </button>
-                        <input
-                          type="text"
-                          class="button-add-pop__input"
-                          placeholder="2"
-                        />
-                        <button
-                          type="button"
-                          class="button-add-pop__pop"
-                          onclick="erraseCountProduct(this)"
-                        >
-                          <img src="../images/Line 28.svg" alt="" />
-                        </button>
+                      <div class="card__info">
+                        <p class="card__name">Груз стандартный 5г 100 шт.</p>
+                        <p class="card__article">артикул: FSGXHHSBUS</p>
+                        <div class="card__availability-block">
+                          <div class="img-block">
+                            <img
+                              src="../images/check-circle-fill.png"
+                              alt=""
+                              class="card__availability-img"
+                            />
+                          </div>
+                          <p class="card__availability__text">есть в наличии</p>
+                        </div>
                       </div>
-                      <div class="card__button-heart-favorites">
-                        <button class="card__heart">
-                          <img src="../images/heart.svg" alt="" class="heart" />
-                        </button>
-                        <button class="card__favorites">
+                      <div class="card__buttons">
+                        <button
+                          class="card__basket"
+                          onclick="deleteProduct(this)"
+                        >
                           <img
-                            src="../images/favorites.svg"
+                            src="../images/удалить из корзины.svg"
                             alt=""
-                            class="favorites"
+                            class="basket"
                           />
                         </button>
+                        <p class="card__price">
+                          1100<span class="price__valuta">руб.</span>
+                        </p>
+                        <div class="card__button-add-pop button-add-pop">
+                          <div class="button-add-pop__container">
+                            <button
+                              type="button"
+                              class="button-add-pop__add"
+                              onclick="addCountProduct(this)"
+                            >
+                              <img src="../images/+.svg" alt="" />
+                            </button>
+                            <input
+                              type="text"
+                              class="button-add-pop__input"
+                              placeholder="2"
+                            />
+                            <button
+                              type="button"
+                              class="button-add-pop__pop"
+                              onclick="erraseCountProduct(this)"
+                            >
+                              <img src="../images/Line 28.svg" alt="" />
+                            </button>
+                          </div>
+                          <div class="card__button-heart-favorites">
+                            <button class="card__heart">
+                              <img
+                                src="../images/heart.svg"
+                                alt=""
+                                class="heart"
+                              />
+                            </button>
+                            <button class="card__favorites">
+                              <img
+                                src="../images/favorites.svg"
+                                alt=""
+                                class="favorites"
+                              />
+                            </button>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="order__card card-product">
-                  <div class="card__block-img">
-                    <img
-                      src="../images/_MG_4353 1.png"
-                      alt=""
-                      class="card__img"
-                    />
-                  </div>
-                  <div class="card__info">
-                    <p class="card__name">Груз стандартный 5г 100 шт.</p>
-                    <p class="card__article">артикул: FSGXHHSBUS</p>
-                    <div class="card__availability-block">
-                      <div class="img-block">
+                    <div class="order__card card-product">
+                      <div class="card__block-img">
                         <img
-                          src="../images/check-circle-fill.png"
+                          src="../images/_MG_4353 1.png"
                           alt=""
-                          class="card__availability-img"
+                          class="card__img"
                         />
                       </div>
-                      <p class="card__availability__text">есть в наличии</p>
-                    </div>
-                  </div>
-                  <div class="card__buttons">
-                    <button class="card__basket" onclick="deleteProduct(this)">
-                      <img src="../images/удалить из корзины.svg" alt="" />
-                    </button>
-                    <p class="card__price">
-                      1100<span class="price__valuta">руб.</span>
-                    </p>
-                    <div class="card__button-add-pop button-add-pop">
-                      <div class="button-add-pop__container">
-                        <button
-                          type="button"
-                          class="button-add-pop__add"
-                          onclick="addCountProduct(this)"
-                        >
-                          <img src="../images/+.svg" alt="" />
-                        </button>
-                        <input
-                          type="text"
-                          class="button-add-pop__input"
-                          placeholder="1"
-                        />
-                        <button
-                          type="button"
-                          class="button-add-pop__pop"
-                          onclick="erraseCountProduct(this)"
-                        >
-                          <img src="../images/Line 28.svg" alt="" />
-                        </button>
+                      <div class="card__info">
+                        <p class="card__name">Груз стандартный 5г 100 шт.</p>
+                        <p class="card__article">артикул: FSGXHHSBUS</p>
+                        <div class="card__availability-block">
+                          <div class="img-block">
+                            <img
+                              src="../images/check-circle-fill.png"
+                              alt=""
+                              class="card__availability-img"
+                            />
+                          </div>
+                          <p class="card__availability__text">есть в наличии</p>
+                        </div>
                       </div>
-                      <div class="card__button-heart-favorites">
-                        <button class="card__heart">
-                          <img src="../images/heart.svg" alt="" class="heart" />
-                        </button>
-                        <button class="card__favorites">
+                      <div class="card__buttons">
+                        <button
+                          class="card__basket"
+                          onclick="deleteProduct(this)"
+                        >
                           <img
-                            src="../images/favorites.svg"
+                            src="../images/удалить из корзины.svg"
                             alt=""
-                            class="favorites"
+                            class="basket"
                           />
                         </button>
+                        <p class="card__price">
+                          1100<span class="price__valuta">руб.</span>
+                        </p>
+                        <div class="card__button-add-pop button-add-pop">
+                          <div class="button-add-pop__container">
+                            <button
+                              type="button"
+                              class="button-add-pop__add"
+                              onclick="addCountProduct(this)"
+                            >
+                              <img src="../images/+.svg" alt="" />
+                            </button>
+                            <input
+                              type="text"
+                              class="button-add-pop__input"
+                              placeholder="1"
+                            />
+                            <button
+                              type="button"
+                              class="button-add-pop__pop"
+                              onclick="erraseCountProduct(this)"
+                            >
+                              <img src="../images/Line 28.svg" alt="" />
+                            </button>
+                          </div>
+                          <div class="card__button-heart-favorites">
+                            <button class="card__heart">
+                              <img
+                                src="../images/heart.svg"
+                                alt=""
+                                class="heart"
+                              />
+                            </button>
+                            <button class="card__favorites">
+                              <img
+                                src="../images/favorites.svg"
+                                alt=""
+                                class="favorites"
+                              />
+                            </button>
+                          </div>
+                        </div>
                       </div>
                     </div>
+                    <div class="order__links order__link-back">
+                      <a href="#" class="link-back-catalog"
+                        >Что-то забыли добавить? Просто перейдите в каталог</a
+                      >
+                    </div>
+                    <div class="order__links order__link-back-mobile">
+                      <p class="order__text-decoration">
+                        Что-то забыли добавить?
+                      </p>
+                      <a href="#" class="link-back-catalog-mobile">
+                        Просто перейдите в каталог</a
+                      >
+                    </div>
                   </div>
-                </div>
-                <div class="order__links order__link-back">
-                  <a href="#" class="link-back-catalog"
-                    >Что-то забыли добавить? Просто перейдите в каталог</a
-                  >
                 </div>
               </div>
               <div class="order-form__total total">
@@ -586,5 +680,6 @@
       <footer class="footer"></footer>
     </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="../script.js"></script>
 </html>

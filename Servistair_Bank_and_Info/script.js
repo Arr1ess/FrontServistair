@@ -169,3 +169,94 @@ inputCountProducts.forEach((input) => {
     event.target.value = count;
   });
 });
+
+//global var slider
+
+let swiperCardSlider = null;
+
+document.addEventListener("DOMContentLoaded", function () {
+  function destroySlider() {
+    if (swiperCardSlider) {
+      swiperCardSlider.destroy(true, true);
+      swiperCardSlider = null;
+
+      const cards = document.querySelector(".cards");
+      if (cards) cards.classList.remove("swiper");
+
+      const cardsWrapper = document.querySelector(".cards__wrapper");
+      if (cardsWrapper) cardsWrapper.classList.remove("swiper-wrapper");
+
+      const sliders = document.querySelectorAll(".slider-cards");
+      sliders.forEach((slider) => slider.classList.remove("swiper-slide"));
+    }
+
+    removeSwiperNotifications();
+  }
+
+  function createSlider() {
+    const cards = document.querySelector(".cards");
+    if (!cards) return;
+
+    // Добавляем классы для Swiper
+    cards.classList.add("swiper");
+    const cardsWrapper = document.querySelector(".cards__wrapper");
+    if (cardsWrapper) cardsWrapper.classList.add("swiper-wrapper");
+
+    const sliders = document.querySelectorAll(".slider-cards");
+    sliders.forEach((slider) => slider.classList.add("swiper-slide"));
+
+    // Создаем новый Swiper
+    swiperCardSlider = new Swiper(".cards", {
+      direction: "vertical",
+      slidesPerView: 3,
+      loop: true,
+    });
+
+    initializeButtonSlider(swiperCardSlider);
+  }
+
+  function checkResolution() {
+    const windowWidth = window.innerWidth;
+
+    if (windowWidth < 680 || windowWidth > 970) {
+      destroySlider();
+    } else {
+      createSlider();
+    }
+  }
+
+  checkResolution();
+
+  window.addEventListener("resize", checkResolution);
+});
+
+function initializeButtonSlider(slider) {
+  const cardButtonPrev = document.querySelector(".cards-button-prev");
+
+  cardButtonPrev.addEventListener("click", function () {
+    slider.slidePrev();
+  });
+
+  const cardButtonNext = document.querySelector(".cards-button-next");
+
+  cardButtonNext.addEventListener("click", function () {
+    slider.slideNext();
+  });
+}
+
+function addClassAsFirst(element, newClass) {
+  const currentClasses = element.classList;
+
+  const classesArray = Array.from(currentClasses);
+
+  classesArray.unshift(newClass);
+
+  element.className = classesArray.join(" ");
+}
+
+function removeSwiperNotifications() {
+  const notifications = document.querySelectorAll("span.swiper-notification");
+  notifications.forEach((notification) => {
+    notification.remove();
+  });
+}
