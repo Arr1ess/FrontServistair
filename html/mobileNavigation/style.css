@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: #d0d0d0 1px solid;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-radius: 50px;
+  box-shadow: 0 3px 7px 0px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease-in-out;
+}
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+.mobile-menu.visible {
+  transform: translateY(0);
+}
+
+i {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* You can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.mobile-item {
+  color: #727272;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.mobile-item.active {
+  color: #FF4444;
+}
+@media (hover: hover) {
+  .mobile-item:hover {
+    color: #007bff;
+  }
+}
+.mobile-item:active {
+  color: #007bff;
+}
+.mobile-item__icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.mobile-item__text {
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+}/*# sourceMappingURL=style.css.map */

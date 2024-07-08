@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Servistair header</title>
+
+		<link rel="stylesheet" href="headerStyle.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="header wrapper">
+			<div class="header__menu header__menu_top">
+				<a href="/" class="header__logo">
+					<p class="header__title">SERVISTAIR</p>
+					<p class="header__sub-title">производственная компания</p>
+				</a>
+				<div class="header__contacts">
+					<div
+						class="header__link header__link_bold copied"
+						title="скопировать"
+					>
+						<div class="spin-element">
+							<img
+								src="images/phone-vibrate.svg"
+								alt=""
+								class="spin-element__front"
+							/>
+							<img
+								src="images/Subtract.svg"
+								alt=""
+								class="spin-element__back"
+							/>
+						</div>
+						<p>+7 (927) 510-23-02</p>
+					</div>
+					<div
+						class="header__link header__link_bold copied"
+						title="скопировать"
+					>
+						<div class="spin-element">
+							<img
+								src="images/envelope-at.svg"
+								alt=""
+								class="spin-element__front"
+							/>
+							<img
+								src="images/Subtract.svg"
+								alt=""
+								class="spin-element__back"
+							/>
+						</div>
+						<p>servistair@inbox.ru</p>
+					</div>
+				</div>
+				<div class="header__link header__link_bold copied" title="скопировать">
+					<div class="spin-element">
+						<img
+							src="images/clock-history.svg"
+							alt=""
+							class="spin-element__front"
+						/>
+						<img src="images/Subtract.svg" alt="" class="spin-element__back" />
+					</div>
+					<p>"Пн-Пт 09:00-18:00"</p>
+				</div>
+				<div class="header__input-wrapper" id="header__input-wrapper">
+					<!-- <input
+						type="text"
+						class="header__input-search"
+						id="header__input-search"
+						placeholder="ПОИСК..."
+					/>
+					<button href="#" class="header__button-link" id="header__button-link">
+						<img src="images/search.svg" alt="" />
+					</button> -->
+
+					<div class="searchBox">
+						<input
+							class="searchInput "
+							type="text"
+							name=""
+							placeholder="Search"
+						/>
+						<button class="searchButton header__button-link" href="#">
+							<!-- <i class="material-icons"> search </i> -->
+							<img src="images/search.svg" alt="" />
+						</button>
+					</div>
+				</div>
+
+				<a href="#" class="header__button-link"
+					><img src="images/bookmarks.svg" alt=""
+				/></a>
+				<a href="#" class="header__button-link"
+					><img src="images/cart-dash.svg" alt=""
+				/></a>
+				<a href="#" class="header__button-link"
+					><img src="images/person-circle.svg" alt=""
+				/></a>
+			</div>
+			<nav class="header__menu">
+				<ul class="header__links">
+					<li class="header__link"><a href="#">ГЛАВНАЯ</a></li>
+					<li class="header__link"><a href="#">КАТАЛОГ</a></li>
+					<li class="header__link"><a href="#">О НАС</a></li>
+				</ul>
+			</nav>
+		</header>
+	</body>
+</html>
+
+<script>
+	// Получаем все элементы с классом "copied"
+	var elementsToCopy = document.getElementsByClassName("copied");
+
+	// Добавляем обработчик события для каждого элемента
+	Array.from(elementsToCopy).forEach(function (element) {
+		element.addEventListener("click", function () {
+			var text = element.innerText;
+
+			var tempInput = document.createElement("input");
+			tempInput.value = text;
+			document.body.appendChild(tempInput);
+
+			tempInput.select();
+			document.execCommand("copy");
+
+			document.body.removeChild(tempInput);
+
+			element.classList.add("copied-active");
+			setTimeout(function () {
+				element.classList.remove("copied-active");
+			}, 800);
+
+			// alert('Текст скопирован: ' + text);
+		});
+	});
+</script>
+
+<script>
+	document
+		.getElementById("header__button-link")
+		.addEventListener("click", function (event) {
+			event.preventDefault(); // Предотвращаем переход по ссылке
+			const inputElement = document.getElementById("header__input-wrapper");
+			inputElement.classList.toggle("visible");
+		});
+</script>
