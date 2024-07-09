@@ -1232,6 +1232,10 @@ legend {
   }
 }
 
+.price-for-one {
+  display: none;
+}
+
 .card__price {
   font-size: 43.8px;
   font-family: "Mulish", sans-serif;
@@ -1515,6 +1519,7 @@ legend {
   font-weight: 300;
   font-family: "Fira Sans", sans-serif;
   color: #a8a8a8;
+  display: none;
 }
 
 .total__result-price {

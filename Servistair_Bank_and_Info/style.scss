@@ -1096,6 +1096,11 @@ $sizeContainer: 1270px;
   }
 }
 
+.price-for-one
+{
+  display: none;;
+}
+
 .card__price {
   font-size: 43.8px;
   font-family: $fontMulish;
@@ -1358,6 +1363,7 @@ $sizeContainer: 1270px;
   font-weight: 300;
   font-family: $fontFiraSans;
   color: #a8a8a8;
+  display: none;
 }
 
 .total__result-price {

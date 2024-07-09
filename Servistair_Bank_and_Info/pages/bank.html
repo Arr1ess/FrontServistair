@@ -163,14 +163,19 @@
                             type="radio"
                             class="payment__input"
                             name="paymentMethod"
-                            id="paymentMethod2"
+                            id="paymentMethod1"
+                            onclick="setMethodPay(1)"
                           />
                           <label
-                            for="paymentMethod2"
+                            for="paymentMethod1"
                             class="custom__radio-payment"
+                            onclick="setMethodPay(1)"
                           ></label>
                         </div>
-                        <label for="paymentMethod2" class="radio__text"
+                        <label
+                          for="paymentMethod1"
+                          class="radio__text"
+                          onclick="setMethodPay(1)"
                           >На расчётный счёт</label
                         >
                         <p class="radio__text-help">Безнал</p>
@@ -182,13 +187,18 @@
                             class="payment__input"
                             name="paymentMethod"
                             id="paymentMethod2"
+                            onclick="setMethodPay(2)"
                           />
                           <label
                             for="paymentMethod2"
                             class="custom__radio-payment"
+                            onclick="setMethodPay(2)"
                           ></label>
                         </div>
-                        <label for="paymentMethod2" class="radio__text"
+                        <label
+                          for="paymentMethod2"
+                          class="radio__text"
+                          onclick="setMethodPay(2)"
                           >Онлайн</label
                         >
                         <p class="radio__text-help">Банковской картой</p>
@@ -200,13 +210,18 @@
                             class="payment__input"
                             name="paymentMethod"
                             id="paymentMethod3"
+                            onclick="setMethodPay(3)"
                           />
                           <label
                             for="paymentMethod3"
                             class="custom__radio-payment"
+                            onclick="setMethodPay(3)"
                           ></label>
                         </div>
-                        <label for="paymentMethod3" class="radio__text"
+                        <label
+                          for="paymentMethod3"
+                          class="radio__text"
+                          onclick="setMethodPay(3)"
                           >Наличными</label
                         >
                         <p class="radio__text-help"></p>
@@ -481,7 +496,10 @@
                 <div class="order-block">
                   <h2 class="order-block__title">Заказ</h2>
                   <div class="order-block__content">
+                    <!--order insertion location-->
                     <div class="order__card card-product">
+                      <!--procie for one insertion location-->
+                      <p class="price-for-one">1100</p>
                       <div class="card__block-img">
                         <img
                           src="../images/куча 1.png"
@@ -529,7 +547,7 @@
                             <input
                               type="text"
                               class="button-add-pop__input"
-                              placeholder="2"
+                              value="1"
                             />
                             <button
                               type="button"
@@ -559,6 +577,8 @@
                       </div>
                     </div>
                     <div class="order__card card-product">
+                      <!--procie for one insertion location-->
+                      <p class="price-for-one">1100</p>
                       <div class="card__block-img">
                         <img
                           src="../images/_MG_4353 1.png"
@@ -606,7 +626,7 @@
                             <input
                               type="text"
                               class="button-add-pop__input"
-                              placeholder="1"
+                              value="1"
                             />
                             <button
                               type="button"
@@ -635,6 +655,7 @@
                         </div>
                       </div>
                     </div>
+                    <!--order close-->
                     <div class="order__links order__link-back">
                       <a href="#" class="link-back-catalog"
                         >Что-то забыли добавить? Просто перейдите в каталог</a
@@ -659,14 +680,18 @@
                   </div>
                   <div class="total__delivery">
                     <p class="total__delivery-text total-text">Доставка</p>
-                    <p class="total__delivery-text total-price">500 ₽</p>
+                    <p
+                      class="total__delivery-text total-price-delivery total-price"
+                    >
+                      500 ₽
+                    </p>
                   </div>
                   <div class="total__result-price">
                     <div class="total__text">
                       <p class="total__result-text">Итого</p>
                       <p class="total__method">оплата картой</p>
                     </div>
-                    <p class="total__result-price">3990 ₽</p>
+                    <p class="total__result-price total-result-price">3990 ₽</p>
                   </div>
                 </div>
                 <div class="total__button-make-order">
