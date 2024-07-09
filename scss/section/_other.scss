@@ -1,0 +1,55 @@
+.other {
+    display: none;
+}
+@media (max-width:600px) {
+    .other {
+        margin-top: 84px;
+        margin-bottom: 49px;
+        display: flex;
+    }
+}
+.other__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 11px 17px 23px;
+    border-radius: 29.27px;
+    background-color: #CFCFCF4D;
+    width: 372px;
+}
+
+.other__title {
+    font-family: Fira Sans;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--black);
+}
+.other__subtitle-text {
+    display: flex;
+    gap: 49px;
+    align-items: center;
+    
+}
+.other__subtitle {
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 17.24px;
+    color: var(--gray-2);
+}
+.other__out {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--link-transition);
+    min-width: 110px;
+    height: 76px;
+    border-radius: 23px;
+    font-family: Fira Sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: var(--white);
+}

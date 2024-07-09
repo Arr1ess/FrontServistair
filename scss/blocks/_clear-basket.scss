@@ -1,0 +1,115 @@
+.clear {
+    margin-top: 102px;
+    display: flex;
+}
+.clear__wrapper {
+    padding: 44px 14px 8px 12px;
+    position: relative;
+}
+.clear__text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+}
+.clear__title {
+    font-family: Fira Sans;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    color: var(--gray-2);
+}
+@media (max-width:767px) {
+    .clear__title {
+        font-size: 27.71px;
+        line-height: 33.25px;
+    }
+}
+.clear__text-subtitle {
+    margin-top: 41px;
+    margin-bottom: 36px;
+    width: 360px;
+}
+@media (max-width:767px) {
+    .clear__text-subtitle {
+        width: 263px;
+        margin-top: 30px;
+        margin-bottom: 36px;
+    }
+}
+.clear__subtitle-before {
+    font-family: Fira Sans;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--gray-2);
+    width: 137px;
+}
+@media (max-width:767px) {
+    .clear__subtitle-before {
+        font-size: 17.32px;
+        line-height: 20.78px;
+        width: 95px;
+    }
+}
+.clear__subtitle-icon {
+}
+@media (max-width:767px) {
+    .clear__subtitle-icon {
+        width: 18.48px;
+        height: 18.48px;
+    }
+}
+.clear__subtitle-after {
+    font-family: Fira Sans;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--gray-2);
+}
+@media (max-width:767px) {
+    .clear__subtitle-after {
+        font-size: 17.32px;
+        line-height: 20.78px;
+    }
+}
+.clear__button {
+    display: flex;
+    
+}
+.clear__catalog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 504px;
+    height: 39px;
+    border-radius: 30.92px;
+}
+@media (max-width:767px) {
+    .clear__catalog {
+        width: 346px;
+        height: 38px;
+        border-radius: 21.42px;
+    }
+}
+.clear__picture {
+    position: absolute;
+    top: -7px;
+    left: 185px;
+}
+@media (max-width:767px) {
+    .clear__picture {
+        position: absolute;
+        top: -19px;
+        left: 47px;
+    }
+}
+.clear__img {
+
+}
+@media (max-width:767px) {
+    .clear__img {
+        width: 337.36px;
+        height: 225.14px;
+    }
+}

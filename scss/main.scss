@@ -1,0 +1,31 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,700;1,700&family=Assistant:wght@600&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital@0;1&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/*Base*/
+@import "base/reset";
+@import "base/vars";
+
+/*Blocks*/
+@import "blocks/catalog";
+@import "blocks/favourites";
+@import "blocks/basket";
+@import "blocks/clear-basket";
+@import "blocks/favourites-clear";
+@import "blocks/error";
+@import "blocks/profile";
+@import "blocks/no-profile";
+
+/*Sections*/
+@import "section/categories";
+@import "section/way-history";
+@import "section/card";
+@import "section/counter";
+@import "section/stock";
+@import "section/availability";
+@import "section/buttons";
+@import "section/other";
+@import "section/numerator";
+@import "section/calc";
+@import "section/methods";
+
+@import "section/swiper-test";

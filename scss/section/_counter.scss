@@ -1,0 +1,81 @@
+.card__counter {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 0px #00000040;
+}
+@media (max-width:767px) {
+    .card__counter {
+        display: none;
+    }
+}
+.counter {
+    
+}
+
+.counter__plus {
+    font-family: Myanmar Sans Pro;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14.56px;
+    text-align: center;
+    color: var(--gray-2);
+    background-color: var(--white);
+    width: 19px;
+    height: 28px;
+}
+.counter__number {
+    font-family: Ubuntu;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 12.64px;
+    text-align: left;
+    color: var(--gray-2);
+}
+.counter__minus-wrapper {
+    width: 13px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+}
+.counter__minus {
+    width: 6px;
+    height: 1px;
+    background-color: var(--gray-2);
+}
+
+.favourites__counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    background-color: var(--gray-bt);
+    border-radius: 15px;
+
+    width: 131px;
+    height: 33px;
+}
+@media (max-width:767px) {
+    .favourites__counter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 27px;
+        border-radius: 12px;
+    
+        width: 93px;
+        height: 26px;
+    }
+}
+.button-value {
+}
+.counter__plus-bg {
+    font-family: Myanmar Sans Pro;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14.56px;
+    text-align: center;
+    color: var(--gray-2);
+    background-color: var(--gray-bt);
+}

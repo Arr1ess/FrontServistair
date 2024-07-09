@@ -1,0 +1,35 @@
+.page-name__numerator {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 7px;
+}
+@media (max-width:767px) {
+    .page-name__numerator {
+        margin-bottom: 4px;
+    }
+}
+
+.numerator {
+}
+.numerator__quantity {
+    font-family: Mulish;
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--gray-5);
+}
+@media (max-width:767px) {
+    .numerator__quantity {
+        font-size: 15px;
+    }
+}
+.numerator__text {
+    font-family: Mulish;
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--gray-5);
+}
+@media (max-width:767px) {
+    .numerator__text {
+        font-size: 15px;
+    }
+}

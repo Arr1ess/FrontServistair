@@ -1,0 +1,37 @@
+.availability {
+
+}
+.card__availability {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+@media (max-width:767px) {
+    .card__availability {
+        display: flex;
+        gap: 3.84px;
+        align-items: center;
+    }
+}
+.availability__result {
+    font-family: Mulish;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12.55px;
+    color: var(--gray-2);
+}
+@media (max-width:767px) {
+    .availability__result {
+        font-size: 6.4px;
+        line-height: 8.03px;
+    }
+}
+.availability__icon {
+
+}
+@media (max-width:767px) {
+    .availability__icon {
+        width: 10.24px;
+        height: 10.24px;
+    }
+}

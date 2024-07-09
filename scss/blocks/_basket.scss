@@ -1,0 +1,305 @@
+.basket {
+    margin-top: 20px;
+}
+.basket__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:992px) {
+    .basket__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+    }
+}
+@media (max-width:767px) {
+    .basket__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+        align-items: center;
+    }
+}
+.basket__selection {
+    
+}
+.basket__label {
+    font-family: Fira Sans;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    color: var(--gray-5);
+}
+.custom-checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--gray-bg-1);
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px 0px #00000040 inset;
+    position: relative;
+    vertical-align: sub;
+}
+.custom-checkbox::before {
+    content: "";
+    width: 18px;
+    height: 14px;
+    display: inline-block;
+    background-image: url("../image/card/icons/check.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+
+    transition: 0.2s ease-in;
+}
+.basket__all:checked + .custom-checkbox::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+.basket__all:checked + .custom-checkbox {
+    background-color: var(--hover-link);
+}
+.basket__all {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.basket__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.basket__cards-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.basket-card {
+    
+}
+.basket-card__info {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 22px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 20px;
+}
+@media (max-width:767px) {
+    .basket-card__info {
+        display: flex;
+        padding-left: 14px;
+        padding-right: 7px;
+        border-radius: 9.37px;
+    }
+}
+.basket-card__check {
+    display: flex;
+    align-items: center;
+}
+.basket-card__select:checked + .custom-checkbox::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+.basket-card__select:checked + .custom-checkbox {
+    background-color: var(--hover-link);
+}
+.basket-card__select {
+    display: none;
+}
+.basket-card__content {
+    display: flex;
+    gap: 15px;
+}
+@media (max-width:1150px) {
+    .basket-card__content {
+        display: flex;
+        gap: 54px;
+    }
+}
+@media (max-width:767px) {
+    .basket-card__content {
+        display: flex;
+        gap: 6px;
+    }
+}
+.basket-card__image {
+    margin-right: 50px;
+}
+@media (max-width:1150px) {
+    .basket-card__image {
+        margin-right: 0;
+    }
+}
+@media (max-width:767px) {
+    .basket-card__image {
+        margin-right: 9px;
+        display: flex;
+        align-items: center;
+    }
+}
+.basket-card__product-img {
+    width: 100%;
+    height: 100%;
+}
+@media (max-width:767px) {
+    .basket-card__product-img {
+        width: 114px;
+        height: 114px;
+    }
+}
+.basket-card__text {
+    padding-top: 6px;
+    margin-right: 98px;
+}
+@media (max-width:1150px) {
+    .basket-card__text {
+        padding-top: 6px;
+        margin-right: 0px;
+    }
+}
+@media (max-width:767px) {
+    .basket-card__text {
+        padding-top: 13px;
+        margin-right: -55px;
+        width: 159px;
+    }
+}
+.basket-card__availability {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+}
+.basket-card__options {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    padding-top: 10px;
+    padding-bottom: 22px;
+}
+@media (max-width:767px) {
+    .basket-card__options {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        padding-top: 7px;
+        padding-bottom: 8px;
+    }
+}
+.basket-card__buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+.button-cardicon {
+    width: 30px;
+    height: 30px;
+    box-shadow: 0px 0px 2px 0px #00000040;
+    border-radius: 5px;
+}
+.basket-card__cost {
+    display: flex;
+    align-items: end;
+}
+.basket-card__price {
+    font-family: Mulish;
+    font-size: 64px;
+    font-weight: 300;
+}
+@media (max-width:767px) {
+    .basket-card__price {
+        font-size: 30px;
+        line-height: 37.64px;
+    }
+}
+.basket-card__measure {
+    font-family: Mulish;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30.12px;
+    color: var(--gray-4);
+}
+@media (max-width:767px) {
+    .basket-card__measure {
+        font-size: 11.25px;
+        line-height: 14.12px;
+    }
+}
+@media (max-width:767px) {
+    .basket-card__icon:nth-child(1) {
+        display: none;
+    }
+}
+.basket-card__into-basket {
+    margin-top: 13px;
+    display: flex;
+    justify-content: flex-end;
+}
+.basket-card__counter {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+
+    width: 123px;
+    height: 30px;
+    box-shadow: 0px 0px 2px 0px #00000040;
+    border-radius: 5px;
+}
+@media (max-width:767px) {
+    .basket-card__counter {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    
+        width: 57.08px;
+        height: 13.92px;
+        box-shadow: 0px 0px 0.93px 0px #00000040;
+        border-radius: 2.32px;
+    }
+}
+.basket__calc {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 77px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    padding: 25px 26px 26px 26px;
+    border-radius: 20px;
+    width: 300px;
+    height: 250px; 
+}
+@media (max-width:992px) {
+    .basket__calc {
+        margin-left: 0;
+    }
+}
+@media (max-width:767px) {
+    .basket__calc {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        padding: 28px 14px 21px 14px;
+        border-radius: 20px;
+        width: 372px;
+        height: 235px; 
+    }
+}
+.basket__button-basket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--hover-link);
+    color: var(--white);
+    width: 248px;
+    height: 58px;
+    border-radius: 40px;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.38px;
+}

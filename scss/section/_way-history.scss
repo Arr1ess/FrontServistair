@@ -1,0 +1,28 @@
+
+.way-history {
+    display: flex;
+    gap: 7px;
+}
+.way-history__items {
+}
+.way-history__link {
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 17.24px;
+    color: var(--gray-1);
+}
+@media (max-width:767px) {
+    .way-history__link {
+        font-family: Ubuntu;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 13.79px;
+        color: var(--gray-1);
+    }
+}
+
+/*section*/
+.navigation__way-history {
+    margin-bottom: 34px;
+}

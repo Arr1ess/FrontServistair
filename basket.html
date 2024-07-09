@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Basket</title>
+</head>
+<body>
+    <main class="main">
+        <div class="page-name">
+            <div class="container">
+                <div class="page-name__wrapper">
+                    <h1 class="page-name__title">Корзина</h1>
+                    <div class="page-name__numerator numerator">
+                        <div class="numerator__quantity">2</div>
+                        <p class="numerator__text">товара</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="basket">
+            <div class="container">
+                <div class="basket__wrapper">
+                    <div class="basket__cards">
+                        <div class="basket__selection">
+                            <label class="basket__label">
+                                <input type="checkbox" class="basket__all checkbox-select">
+                                <span class="custom-checkbox"></span>
+                                Выбрать все
+                            </label>
+                        </div>
+                        <ul class="basket__cards-items basket-card">
+                            <li class="basket-card__info">
+                                <label class="basket-card__content">
+                                    <div class="basket-card__check">
+                                        <input type="checkbox" class="checkbox-select basket-card__select">
+                                        <span class="custom-checkbox"></span>
+                                    </div>
+                                    <div class="basket-card__image">
+                                        <img src="image/card/items/heap.png" alt="product" class="basket-card__product-img">
+                                    </div>
+                                    <div class="basket-card__text">
+                                        <div class="card__text">
+                                            <h4 class="card__title">Груз стандартный 5г 100 шт.</h4>
+                                            <h5 class="card__article">артикул: FSGXHHSBUS</h5>
+                                        </div>
+                                        <div class="basket-card__availability availability">
+                                            <img src="image/card/icons/check-circle-fill.svg" alt="try" class="availability__icon">
+                                            <p class="availability__result">есть в наличии</p>
+                                        </div>
+                                    </div>
+                                    <div class="basket-card__options">
+                                        <div class="basket-card__buttons">
+                                            <button class="button-cardicon basket-card__icon">
+                                                <img src="image/card/icons/bookmark-true.svg" alt="bookmark" class="basket-card__bookmark">
+                                            </button>
+                                            <button class="button-cardicon basket-card__icon">
+                                                <img src="image/card/icons/basket.svg" alt="basket" class="basket-card__basket">
+                                            </button>
+                                        </div>
+                                        <div class="basket-card__condition">
+                                            <div class="basket-card__cost">
+                                                <div class="basket-card__price">1100</div>
+                                                <p class="basket-card__measure">руб.</p>
+                                            </div>
+                                            <div class="basket-card__into-basket">
+                                                <div class="basket-card__counter counter">
+                                                    <button class="button-value counter__plus">+</button>
+                                                    <p class="counter__number">1</p>
+                                                    <div class="counter__minus-wrapper">
+                                                        <button class="button-value counter__minus"></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="basket-card__info">
+                                <label class="basket-card__content">
+                                    <div class="basket-card__check">
+                                        <input type="checkbox" class="checkbox-select basket-card__select">
+                                        <span class="custom-checkbox"></span>
+                                    </div>
+                                    <div class="basket-card__image">
+                                        <img src="image/card/items/heap.png" alt="product" class="basket-card__product-img">
+                                    </div>
+                                    <div class="basket-card__text">
+                                        <div class="card__text">
+                                            <h4 class="card__title">Груз стандартный 5г 100 шт.</h4>
+                                            <h5 class="card__article">артикул: FSGXHHSBUS</h5>
+                                        </div>
+                                        <div class="basket-card__availability availability">
+                                            <img src="image/card/icons/check-circle-fill.svg" alt="try" class="availability__icon">
+                                            <p class="availability__result">есть в наличии</p>
+                                        </div>
+                                    </div>
+                                    <div class="basket-card__options">
+                                        <div class="basket-card__buttons">
+                                            <button class="button-cardicon basket-card__icon">
+                                                <img src="image/card/icons/bookmark-true.svg" alt="bookmark" class="basket-card__bookmark">
+                                            </button>
+                                            <button class="button-cardicon basket-card__icon">
+                                                <img src="image/card/icons/basket.svg" alt="basket" class="basket-card__basket">
+                                            </button>
+                                        </div>
+                                        <div class="basket-card__condition">
+                                            <div class="basket-card__cost">
+                                                <div class="basket-card__price">1100</div>
+                                                <p class="basket-card__measure">руб.</p>
+                                            </div>
+                                            <div class="basket-card__into-basket">
+                                                <div class="basket-card__counter counter">
+                                                    <button class="button-value counter__plus">+</button>
+                                                    <p class="counter__number">1</p>
+                                                    <div class="counter__minus-wrapper">
+                                                        <button class="button-value counter__minus"></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="basket__calc calc">
+                        <div class="calc__cost">
+                            <div class="calc__prices">
+                                <div class="calc__result">Итого:</div>
+                                <div class="calc__cost-result">
+                                    <div class="calc__amount">1100</div>
+                                    <div class="calc__currency">₽</div>
+                                </div>
+                            </div>
+                            <div class="calc__sale">
+                                <div class="calc__sale-result">Итого без скидки:</div>
+                                <div class="calc__cost-sale">
+                                    <div class="calc__amount-sale">1100</div>
+                                    <div class="calc__currency-sale">₽</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calc__button-basket">
+                            <a href="#" class="basket__button-basket">перейти к оформлению</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

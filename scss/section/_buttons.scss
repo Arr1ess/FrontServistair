@@ -1,0 +1,18 @@
+.button-basket {
+    background-color: var(--hover-link);
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 17.24px;
+    text-align: center;
+    color: var(--white);
+}
+@media (max-width:767px) {
+    .button-basket {
+        font-size: 11.82px;
+        line-height: 13.58px;
+    }
+}
+.button-value {
+
+}

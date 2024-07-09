@@ -1,0 +1,118 @@
+.favourites__calc {
+    margin-top: 15px;
+    margin-right: 15px;
+    padding: 40px 30px 23px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 94px;
+    border-radius: 10px;
+    background-color: var(--gray-0);
+
+    position: sticky;
+    min-width: 330px;
+    height: 270px;
+}
+@media (max-width:767px) {
+    .favourites__calc {
+        margin-top: 15px;
+        padding: 45px 34px 26px 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 118px;
+        border-radius: 10px;
+        background-color: var(--gray-0);
+    
+        position: sticky;
+        width: 372px;
+        height: 300px;
+    }
+}
+.calc {
+}
+.calc__cost {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.calc__prices {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.calc__result {
+    font-family: Mulish;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--gray-2);
+}
+.calc__cost-result {
+    display: flex;
+    gap: 6px;
+    align-items: flex-end;
+}
+.calc__amount {
+    font-family: Mulish;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--gray-2);
+}
+.calc__currency {
+    font-family: Mulish;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--gray-2);
+}
+.calc__sale {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.calc__sale-result {
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--gray-1);
+}
+.calc__cost-sale {
+    display: flex;
+    gap: 6px;
+    align-items: flex-end;
+}
+.calc__amount-sale {
+    font-family: Mulish;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--gray-1);
+}
+.calc__currency-sale {
+    font-family: Mulish;
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--gray-1);
+}
+.calc__basket {
+}
+.calc__button-basket {
+    display: flex;
+    justify-content: center;
+}
+.calc__button {
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22.98px;
+    padding: 11px 86px;
+    border-radius: 30.92px;
+}
+@media (max-width:767px) {
+    .calc__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Ubuntu;
+        font-size: 22.55px;
+        line-height: 25.9px;
+        padding: 12px 97px;
+        border-radius: 35px;
+    }
+}
