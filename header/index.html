@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Servistair header</title>
+
+		<link rel="stylesheet" href="styles/headerStyle.css" />
+		<link rel="stylesheet" href="styles/null.css" />
+		<link rel="stylesheet" href="styles/mobileMenu.css" />
+		<link rel="stylesheet" href="styles/fonts.css" />
+	</head>
+	<body>
+		<header class="header wrapper">
+			<div class="header__menu header__menu_top">
+				<a href="/" class="header__logo">
+					<p class="header__title">SERVISTAIR</p>
+					<p class="header__sub-title">производственная компания</p>
+				</a>
+				<div
+					class="header__input-wrapper desktop-only"
+					id="header__input-wrapper"
+				>
+					<input class="searchInput" type="text" name="" placeholder="Search" />
+				</div>
+				<div class="header__button-link desktop-only">
+					<button
+						class="button-link"
+						title="Перейти к контактам"
+						id="header-contact-button"
+						onclick="headerToggleSubmenu(event)"
+					>
+						<img src="images/phone-vibrate.svg" alt="" />
+					</button>
+					<ul class="header__submenu" id="header-contact-subMenu">
+						<li
+							class="header__link header__link_bold copied"
+							title="скопировать"
+						>
+							<div class="spin-element">
+								<img
+									src="images/phone-vibrate.svg"
+									alt=""
+									class="spin-element__front"
+								/>
+								<img
+									src="images/Subtract.svg"
+									alt=""
+									class="spin-element__back"
+								/>
+							</div>
+							<p>+7 (927) 510-23-02</p>
+						</li>
+						<li
+							class="header__link header__link_bold copied"
+							title="скопировать"
+						>
+							<div class="spin-element">
+								<img
+									src="images/envelope-at.svg"
+									alt=""
+									class="spin-element__front"
+								/>
+								<img
+									src="images/Subtract.svg"
+									alt=""
+									class="spin-element__back"
+								/>
+							</div>
+							<p>servistair@inbox.ru</p>
+						</li>
+						<li
+							class="header__link header__link_bold copied"
+							title="скопировать"
+						>
+							<div class="spin-element">
+								<img
+									src="images/clock-history.svg"
+									alt=""
+									class="spin-element__front"
+								/>
+								<img
+									src="images/Subtract.svg"
+									alt=""
+									class="spin-element__back"
+								/>
+							</div>
+							<p>"Пн-Пт 09:00-18:00"</p>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="header__button-link button-link desktop-only"
+					><img src="images/bookmarks.svg" alt=""
+				/></a>
+				<a href="#" class="header__button-link button-link desktop-only"
+					><img src="images/cart-dash.svg" alt=""
+				/></a>
+				<a href="#" class="header__button-link button-link"
+					><img src="images/person-circle.svg" alt=""
+				/></a>
+			</div>
+
+			<nav class="header__menu">
+				<ul class="header__links desktop-only">
+					<li class="header__link">
+						<a href="#" title="Перейти на главную страницу">ГЛАВНАЯ</a>
+					</li>
+					<li class="header__link">
+						<a href="#" title="Перейти в каталог">КАТАЛОГ</a>
+					</li>
+					<li class="header__link">
+						<a href="#" title="Узнать больше о нас">О НАС</a>
+					</li>
+				</ul>
+				<div class="header__burger mobile-only" id="burger-menu">
+					<button class="burger-icon" id="burger-icon">
+						<div class="burger-background"></div>
+						<span></span>
+					</button>
+					<div class="burger-menu" id="burger-menu-items">
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Услуги</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div
+					class="header__input-wrapper mobile-only"
+					id="header__input-wrapper"
+				>
+					<input class="searchInput" type="text" name="" placeholder="Search" />
+				</div>
+			</nav>
+		</header>
+
+		<nav class="mobile-menu wrapper">
+			<ul class="mobile-menu__links">
+				<li class="mobile-menu__link">
+					<a
+						href="#"
+						class="mobile-menu__item mobile-item active"
+						title="Перейти на главную страницу"
+					>
+						<i class="mobile-item__icon icon-home">&#xe802;</i>
+						<span class="mobile-item__text">Главная</span>
+					</a>
+				</li>
+				<li class="mobile-menu__link mobile-menu__item">
+					<button
+						class="mobile-item"
+						title="Перейти к контактам"
+						id="contact-button"
+					>
+						<i class="mobile-item__icon icon-contacts">&#xe805;</i>
+						<span class="mobile-item__text">Контакты</span>
+					</button>
+					<ul class="mobile-menu__submenu" id="contact-subMenu">
+						<li
+							class="header__link header__link_bold copied"
+							title="скопировать"
+						>
+							<div class="spin-element">
+								<img
+									src="images/phone-vibrate.svg"
+									alt=""
+									class="spin-element__front"
+								/>
+								<img
+									src="images/Subtract.svg"
+									alt=""
+									class="spin-element__back"
+								/>
+							</div>
+							<p>+7 (927) 510-23-02</p>
+						</li>
+						<li
+							class="header__link header__link_bold copied"
+							title="скопировать"
+						>
+							<div class="spin-element">
+								<img
+									src="images/envelope-at.svg"
+									alt=""
+									class="spin-element__front"
+								/>
+								<img
+									src="images/Subtract.svg"
+									alt=""
+									class="spin-element__back"
+								/>
+							</div>
+							<p>servistair@inbox.ru</p>
+						</li>
+						<li
+							class="header__link header__link_bold copied"
+							title="скопировать"
+						>
+							<div class="spin-element">
+								<img
+									src="images/clock-history.svg"
+									alt=""
+									class="spin-element__front"
+								/>
+								<img
+									src="images/Subtract.svg"
+									alt=""
+									class="spin-element__back"
+								/>
+							</div>
+							<p>"Пн-Пт 09:00-18:00"</p>
+						</li>
+					</ul>
+				</li>
+				<li class="mobile-menu__link">
+					<a
+						href="#"
+						class="mobile-menu__item mobile-item"
+						title="Перейти в корзину"
+					>
+						<i class="mobile-item__icon icon-busket">&#xe801;</i>
+						<span class="mobile-item__text">Корзина</span>
+					</a>
+				</li>
+				<li class="mobile-menu__link">
+					<a
+						href="#"
+						class="mobile-menu__item mobile-item"
+						title="Перейти в избранное"
+					>
+						<i class="mobile-item__icon icon-favourites">&#xe804;</i>
+						<span class="mobile-item__text">Избранное</span>
+					</a>
+				</li>
+				<li class="mobile-menu__link">
+					<a
+						href="#"
+						class="mobile-menu__item mobile-item"
+						title="Перейти в профиль"
+					>
+						<i class="mobile-item__icon icon-account">&#xe803;</i>
+						<span class="mobile-item__text">Профиль</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<script src="script.js"></script>
+	</body>
+</html>
