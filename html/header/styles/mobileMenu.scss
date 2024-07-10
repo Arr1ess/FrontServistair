@@ -1,0 +1,98 @@
+@import "mixin";
+
+$primary-color: #007bff;
+$active-color: #ff4444;
+$text-color: #727272;
+$border-color: #d0d0d0;
+$shadow-color: rgba(0, 0, 0, 0.25);
+
+.mobile-menu {
+	position: fixed;
+	bottom: 0;
+	// width: 100%;
+
+	transition: transform 0.3s ease-in-out;
+
+	@media (min-width: 768px) {
+		display: none;
+	}
+
+	&.visible {
+		transform: translateY(0);
+	}
+
+	&__links {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		border: 1px solid $border-color;
+		border-radius: 50px;
+		box-shadow: 0 3px 7px 0 $shadow-color;
+	}
+
+	&__submenu {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		bottom: 100%;
+		padding: 5px;
+		gap: 5px;
+
+		&.active {
+			display: flex;
+		}
+	}
+
+	&__item {
+		position: relative;
+		padding: 10px 0;
+
+		@include hover() {
+			& .mobile-menu__submenu {
+				display: flex;
+			}
+		}
+	}
+}
+
+.mobile-item {
+	color: $text-color;
+	background-color: transparent;
+	border: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-decoration: none;
+	transition: color 0.3s;
+	cursor: pointer;
+
+	&.active {
+		color: $active-color;
+	}
+
+	&:hover {
+		color: $primary-color;
+	}
+
+	&__icon {
+		font-size: 24px;
+		margin-bottom: 5px;
+	}
+
+	&__text {
+		font-family: "Mulish", sans-serif;
+		font-weight: 500;
+		font-size: 12px;
+	}
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1;
+	background-color: transparent;
+	pointer-events: none;
+}

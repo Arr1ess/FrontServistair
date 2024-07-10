@@ -1,0 +1,122 @@
+* {
+	/* outline: 1px solid green !important; */
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: inherit;
+	font-family: "Ubuntu", sans-serif;
+}
+
+h2,
+h3,
+p {
+	color: #2c2c2c;
+}
+
+p {
+	font-weight: 500;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+input,
+textarea {
+	border: none;
+	outline: none;
+}
+
+.wrapper {
+	max-width: 1302px;
+	width: 100%;
+	margin-inline: auto;
+	padding-inline: 10px;
+}
+
+.copied {
+	cursor: pointer;
+	position: relative;
+}
+
+.spin-element {
+	position: relative;
+	transform: rotateY(0deg);
+	transform-style: preserve-3d;
+	transition: all 0.2s ease-in-out;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.spin-element > * {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: all 0.2s ease-in-out;
+	min-height: 100%;
+	aspect-ratio: 1;
+}
+
+.spin-element > img {
+	object-fit: contain;
+	object-position: center;
+}
+
+.spin-element__front {
+	position: relative;
+}
+
+.spin-element__back {
+	transform: rotateY(180deg);
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	translate: -50% -50%;
+}
+
+.copied.copied-active > .spin-element {
+	transform: rotateY(180deg);
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.main {
+	flex: 1;
+}
+
+.desktop-only {
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
+
+.mobile-only {
+	@media (min-width: 768px) {
+		display: none;
+	}
+}
